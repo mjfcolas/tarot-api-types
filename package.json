@@ -1,6 +1,6 @@
 {
   "name": "tarot-api-types",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Types to communicate with tarot matchmaking api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
