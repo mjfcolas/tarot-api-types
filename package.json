@@ -1,0 +1,25 @@
+{
+  "name": "tarot-api-types",
+  "version": "0.0.1",
+  "description": "Types to communicate with tarot matchmaking api",
+  "main": "./src/index.ts",
+  "files": [
+    "/dist/index.js",
+    "/dist/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjfcolas/tarot-api-types.git"
+  },
+  "author": "mjfcolas",
+  "license": "ISC",
+  "dependencies": {
+    "tarot-card-deck": "^1.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
