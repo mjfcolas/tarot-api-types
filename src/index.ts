@@ -1,6 +1,4 @@
-import {PlayingCard} from "tarot-card-deck";
-import {PlayingCardIdentifier} from "tarot-card-deck/dist/cards/playing-card";
-
+import {PlayingCard, PlayingCardIdentifier} from "tarot-card-deck";
 type PlayerView = {
     id: string,
     name: string
