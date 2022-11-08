@@ -1,4 +1,5 @@
 import {PlayingCard, PlayingCardIdentifier} from "tarot-card-deck";
+
 type PlayerView = {
     id: string,
     name: string
@@ -86,7 +87,18 @@ export type ApiUserNotification = {
     possibleCardsToSetAside: PlayingCard[];
 } | {
     type: "ERROR_WHILE_SETTING_ASIDE";
+} | {
+    type: "ASKED_FOR_POIGNEE_ANNOUNCE",
+    numberOfCardsToShow: number,
+    possibleCardsToShow: PlayingCard[],
+} | {
+    type: "ERROR_WHILE_ANNOUNCING_POIGNEE"
+} | {
+    type: "POIGNEE_HAS_BEEN_ANNOUNCED",
+    player: string,
+    shownCards: PlayingCard[]
 }
+
 
 export type ApiPlayerAction = {
     action: "CREATE_TABLE",
@@ -103,4 +115,10 @@ export type ApiPlayerAction = {
 } | {
     action: "PLAY",
     card: PlayingCardIdentifier
+} | {
+    action: "ANNOUNCE_POIGNEE",
+    cards: PlayingCardIdentifier[]
+} | {
+    action: "DECLINE_POIGNEE",
 }
+
