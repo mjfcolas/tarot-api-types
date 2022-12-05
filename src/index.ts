@@ -45,6 +45,10 @@ export type ApiUserNotification = {
     newPlayer: PlayerView,
     players: PlayerView[]
 } | {
+    type: "PLAYER_HAS_LEFT",
+    player: PlayerView,
+    players: PlayerView[]
+} | {
     type: "GOT_AVAILABLE_CARDS";
     cards: PlayingCard[];
 } | {
@@ -120,5 +124,9 @@ export type ApiPlayerAction = {
     cards: PlayingCardIdentifier[]
 } | {
     action: "DECLINE_POIGNEE",
+} | {
+    action: "LEAVE_TABLE"
+} | {
+    action: "KEEP_ALIVE"
 }
 
